@@ -81,23 +81,28 @@ int main() {
     {
         // identify currnet player
         // design which player's round
+        player *current;
         switch (roundCounter%5)
         {
         case 0:
+            *current = host;
             break;
         
         case 1:
+            *current = p1;
             break;
         
         case 2:
+            *current = p2;
             break;
         
         case 3:
+            *current = p3;
             break;
         
         case 4:
+            *current = me;
             break;
-        
         }
         // ended = true;
     }
